@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: lime;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    flex: 0 0 30%;
+    height: 2rem;
+    border-radius: 5px 5px 0 0;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: arial;
+    text-align: center;
+}
+
+div.watch {
+    background: rgb(15, 125, 15);
+}
+
+div.stoper {
+    background: rgb(15, 125, 125);
+}
+
+div.counter {
+    background: rgb(125, 15, 125);
+}
+
+section div {
+    width: 100%;
+    height: calc(100vh - 2rem);
+    margin: 0 auto;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+section div.watch {
+    z-index: 1;
+}
+
+section div.stoper {
+    z-index: 0;
+}
+
+section div.counter {
+    z-index: 0;
+}
+
+section div.watch h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section div.stoper section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section div.counter section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
